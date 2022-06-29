@@ -1,6 +1,4 @@
 
-
-
 @import url('https://cdn-a.omg.lol/css/type.css');
 
 :root {
@@ -69,7 +67,7 @@ h1 {
 
 #profile-picture-container {
 	margin: auto;
-	color: #555;
+	color: var(--main-color);
 	margin-bottom: 1em;
 }
 
@@ -81,14 +79,14 @@ h1 {
 #pronouns {
 	margin: 0;
 	font-weight: 400;
-	color: #666;
+	color: var(--purple);
 }
 
 #pronouns a:link,
 #pronouns a:visited,
 #pronouns a:hover,
 #pronouns a:active {
-	color: #666;
+	color: var(--comment);
 }
 
 #details {
@@ -119,14 +117,14 @@ h1 {
 	margin-top: 5em;
 	font-size: 90%;
 	font-weight: 300;
-	color: #555;
+	color: var(--comment);
 }
 
 #footer a:link,
 #footer a:visited,
 #footer a:hover,
 #footer a:active {
-	color: #555;
+	color: var(--comment);
 	text-decoration: none;
 	border: 0;
 }
@@ -151,22 +149,22 @@ li {
 
 a:link,
 a:visited {
-	color: #000;
-	text-decoration-color: #555;
+	color: var(--forground);
+	text-decoration-color: var(--forground);
 	text-decoration: none;
-	border-bottom: 1px dotted #000;
+	border-bottom: 1px dotted var(--comment);
 }
 a:hover,
 a:active {
-	color: #000;
-	text-decoration-color: #000;
+	color: var(--forground);
+	text-decoration-color: var(--forground);
 	text-decoration: none;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid var(--comment);
 }
 
 .omg-icon-li {
 	position: relative;
-	border: 0px solid green;
+	border: 0px solid var(--green);
 }
 
 .omg-icon {
@@ -197,7 +195,7 @@ a:active {
 
 @media (prefers-color-scheme: dark) {
 	.omg-icon.rainbow-me svg {
-		fill: #fff;
+		fill: var(--forground);
 	}
 }
 
@@ -209,4 +207,8 @@ a:active {
 	main {
 		padding: 1.5em;
 	}
+}
+
+h1#name a i.fa-badge-check {
+	color: var(--purple) !important; 
 }
