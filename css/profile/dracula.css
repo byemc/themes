@@ -1,3 +1,10 @@
+/*
+Theme: Dracula
+Author: Bye (@_byemc)
+License: Public domain
+Version: 1.0
+Description: Dark theme 
+*/
 
 @import url('https://cdn-a.omg.lol/css/type.css');
 
@@ -17,6 +24,11 @@
 
 * {
 	box-sizing: border-box;
+}
+
+::selection {
+	background: var(--purple);
+	color: var(--forground);
 }
 
 body {
